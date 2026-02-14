@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sorry Bestie 💖</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4, #ffdde1);
+            background-size: 300% 300%;
+            animation: gradientMove 8s ease infinite;
+        }
+
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            max-width: 500px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        h1 {
+            color: #ff4e50;
+            font-size: 32px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #555;
+            margin: 15px 0;
+        }
+
+        .highlight {
+            color: #ff4e50;
+            font-weight: bold;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 30px;
+            background: linear-gradient(45deg, #ff4e50, #f9d423);
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+        }
+
+        .hidden-message {
+            display: none;
+            margin-top: 20px;
+            font-size: 20px;
+            color: #ff4e50;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>I'm Really Sorry 😔💖</h1>
+
+        <p>Hey Bestie,</p>
+
+        <p>
+            I know I messed up...  
+            But please remember,
+            I love to irritate you…<br>
+because your cute angry face is my favorite thing 😜
+        </p>
+
+        <p class="highlight">
+            You are such a good person...
+        </p>
+
+        <p>
+            That’s why I hate you so much 😜❤️  
+            (Because you're too good and I can't compete!)
+        </p>
+
+        <button onclick="showMessage()">Click if you still angry on me 😜  💕</button>
+
+        <div class="hidden-message" id="secret">
+            I promise I'll never hurt you again. 🌍💖 <br>
+            If I hurt you then I will send this again 😜
+             🌍💖
+        </div>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("secret").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
